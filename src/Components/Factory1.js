@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-export const Factory1 = ({}) => {
+import Communities from "./Communities";
+export const Factory1 = () => {
   return (
     <FactoryRoot>
       <Element10>
@@ -19,7 +20,6 @@ export const Factory1 = ({}) => {
         </BAR>
         <Text5>OUR COMMUNITY</Text5>
       </Element10>
-      <Akariconssearch src={""} />
       <Element11>
         <FACTORY2>
           F A C T O R Y<FACTORY fontWeight={"400"}> </FACTORY>
@@ -45,359 +45,22 @@ export const Factory1 = ({}) => {
           src={"https://file.rendit.io/n/fgpzA2z5krxHwGedc3Ru.png"}
         />
       </Element12>
+
       <Text7>Communities You May Like</Text7>
-      <FlexRow>
-        <Element13>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                    hlllo
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element13>
-        <Element17 margin={"0px 66.5px 0px 0px"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/weYw1jsnsYq7ANvvkajs.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-      </FlexRow>
-      <FlexRow4 margin={"0px 0px 80px 0px"}>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/weYw1jsnsYq7ANvvkajs.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-      </FlexRow4>
-      <FlexRow4 margin={"0"}>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-        <Element17 margin={"0"}>
-          <TimberwolfFlexColumn>
-            <Biimagefill1
-              src={"https://file.rendit.io/n/weYw1jsnsYq7ANvvkajs.svg"}
-            />
-            <Element14>
-              <Text8>Weddings in Tel Aviv</Text8>
-              <Text9>Description</Text9>
-              <Element15>
-                <Text10>+30</Text10>
-                <FlexRow1>
-                  <Element16>
-                    {[
-                      {
-                        src: "https://file.rendit.io/n/vicS25L1FIzfdEZd5epO.png",
-                        left: "63px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
-                        left: "32px",
-                      },
-                      {
-                        src: "https://file.rendit.io/n/EdvoLV43Y3M77g7KM0FB.png",
-                        left: "0px",
-                      },
-                    ].map((data) => (
-                      <Image5 left={data.left} src={data.src} />
-                    ))}
-                  </Element16>
-                  <Image8
-                    src={"https://file.rendit.io/n/0IPqrlPTD1Yp7bX6J6CC.png"}
-                  />
-                </FlexRow1>
-              </Element15>
-            </Element14>
-          </TimberwolfFlexColumn>
-          <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
-        </Element17>
-      </FlexRow4>
+    { Array(3).fill().map(() => { 
+      return <Communities
+        title1={"Wedding"}
+        title2={"School"}
+        title3={"University"}
+        descrip1={"description"}
+        descrip2={"description"}
+        descrip3={"description"}
+      ></Communities>}) }
+
     </FactoryRoot>
   );
 };
+
 const FactoryRoot = styled.div`
   border-width: 1px;
   border-color: #000000;
@@ -485,12 +148,7 @@ const Text5 = styled.div`
   top: 13px;
   left: 673px;
 `;
-const Akariconssearch = styled.img`
-  width: 23px;
-  height: 24px;
-  align-self: flex-start;
-  margin: 0px 0px 7px 0px;
-`;
+
 const Element11 = styled.div`
   width: 1119px;
   height: 93.5px;
