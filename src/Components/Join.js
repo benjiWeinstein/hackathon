@@ -111,6 +111,8 @@ export const JoinCommunity = ({}) => {
         </Element8>
         <Image8 src={"https://file.rendit.io/n/8dy5ZlLSyJrt2id8i0rJ.svg"} />
       </Element7>
+      <br></br>
+      <br></br>
     </JoinCommunityRoot>
   );
 };

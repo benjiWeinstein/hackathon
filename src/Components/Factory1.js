@@ -49,7 +49,7 @@ export const Factory1 = () => {
       <Text7>Communities You May Like</Text7>
     { Array(3).fill().map(() => { 
       return <Communities
-        title1={"Wedding Day"}
+        title1={"Wedding"}
         title2={"School"}
         title3={"University"}
         descrip1={"description"}
