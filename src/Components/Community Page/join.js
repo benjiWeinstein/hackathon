@@ -1,7 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+
 export const JoinCommunity = ({}) => {
-    const descrip = "The description"
+  const db = {"Weddings%20in%20Tel%20Aviv":{
+    "description": "description about weddings"
+    },
+    "Streetwear":{
+      "description": "description about streetwear"
+      },
+    "Your%20Favorites%20Brands":{
+      "description": "description about your brands"
+    },
+    "Skateboarding":{
+      "description": "description about skateboarding"
+    },
+    "Color%20Matching":{
+      "description": "description about color matching"
+    },
+    "Poolwear":{
+      "description": "description about poolwear"
+    },
+    "Cocktail%20Evening":{
+      "description": "description about cocktail party"
+      },
+    "Party%20Look":{
+      "description": "description about party look"
+    },
+    "90's party":{
+      "description": "description about 90 partyis "
+    },    
+  };  
+  const arr = window.location.pathname.split('/');
+  const id = arr[arr.length - 1];
+  console.log(db[id].description);
   return (
     <JoinCommunityRoot>
       <Element1>
@@ -39,7 +70,7 @@ export const JoinCommunity = ({}) => {
       </Element2>
       <FlexRow>
         <FlexColumn>
-          <Text6>Weddings in Tel Aviv</Text6>
+          <Text6>{id.replaceAll("%20"," ")}</Text6>
           <Element3>
             <Ellipse>
               <Ellipse1>
@@ -104,7 +135,7 @@ export const JoinCommunity = ({}) => {
       <Line3 src={"https://file.rendit.io/n/DNRY1xhaW1oAOEwqTubL.svg"} />
       <Line2 src={"https://file.rendit.io/n/jmzGfkNoyNiDcvMPFgN4.svg"} />
       <Element6>
-        <Text13>{`${descrip}`}</Text13>
+        <Text13>{db[id].description}</Text13>
         <Element7 />
       </Element6>
     </JoinCommunityRoot>
@@ -407,10 +438,11 @@ const Element6 = styled.div`
   align-self: stretch;
   height: 640px;
   position: relative;
+  width: 100%;
   min-width: 1438px;
 `;
 const Text13 = styled.div`
-  width: 228px;
+  width: 100%;
   height: 46px;
   font-size: 35px;
   font-family: SF Pro Display;

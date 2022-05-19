@@ -62,7 +62,7 @@ export const FactoryNew = () => {
         <FlexRow>
             <Com title={`Cocktail Evening`} src={`https://www.beyoung.in/blog/wp-content/uploads/2018/11/wirh-accessories.jpg`} descrip={`We can also recommend actual cocktails`}></Com>
             <Com title={`Party Look`} src={`https://ae05.alicdn.com/kf/Hca06b9eabc0641ea90cb53237741418eO/Sexy-Faux-Leather-Dress-Backless-Club-Party-Short-Dress-Solid-Black-Wet-Look-Latex-Bodycon-Push.jpg`} descrip={`We know how to party here`}></Com>
-            <Com title={`90's`} src={`https://target.scene7.com/is/image/Target/GUEST_0e1b6b3e-274c-4c3b-a01e-e0de0a1a646a?wid=1000&hei=1000`} descrip={`Dress like you really want.`}></Com>   
+            <Com title={`90's party`} src={`https://target.scene7.com/is/image/Target/GUEST_0e1b6b3e-274c-4c3b-a01e-e0de0a1a646a?wid=1000&hei=1000`} descrip={`Dress like you really want.`}></Com>   
         </FlexRow>
       </FlexColumn>
     </FactoryRoot>
