@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Com from "./Com";
+import Com from "./Communities";
 import SpecialEvent from "./SpecialEvent1";
 export const FactoryNew = () => {
   return (

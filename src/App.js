@@ -1,7 +1,6 @@
-import { Factory1 } from "./Components/Factory1";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { JoinCommunity } from "./Components/Join";
-import { FactoryNew } from "./Components/try";
+import { JoinCommunity } from "./Components/Community Page/join";
+import { FactoryNew } from "./Components/Home Page/Home";
 // import { useEffect } from "react";
 
 
@@ -19,7 +18,6 @@ return(
                 <FactoryNew/>
             </Route>
             <Route path={"/join/:id"} children={<JoinCommunity/>}>
-                {/* <JoinCommunity></JoinCommunity> */}
             </Route>
 
         </Switch>

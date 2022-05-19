@@ -14,7 +14,7 @@ const db = {"Wedding%20Day": {
   "user2_name": "Sara Botnim",
   "user2_dis": "Do you think a white dress will be good for a wedding?"
 }}
-export const JoinCommunity = ({}) => {
+export const JoinCommunity4 = ({}) => {
   const {id} = useParams()
 
   return (
