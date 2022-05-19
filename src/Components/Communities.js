@@ -1,15 +1,19 @@
 import styled from "styled-components";
+import { Link  } from "react-router-dom";
 
 const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => {
   return (
     <FlexRow>
+      <Link to={"/join"}>
         <Element13>
           <TimberwolfFlexColumn>
             <Biimagefill1
               src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
             />
             <Element14>
-              <Text8>{title1}</Text8>
+              <Text8>
+                {title1}
+              </Text8>
               <Text9>{descrip1}</Text9>
               <Element15>
                 <Text10>+30</Text10>
@@ -42,13 +46,17 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
           </TimberwolfFlexColumn>
           <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
         </Element13>
+      </Link>
+      <Link to={`/join#${title2}`}>
         <Element17 margin={"0px 66.5px 0px 0px"}>
           <TimberwolfFlexColumn>
             <Biimagefill1
               src={"https://file.rendit.io/n/ypMqwMQwAUmUkRdFxiXk.svg"}
             />
             <Element14>
-              <Text8>{title2}</Text8>
+              <Text8>
+                {title2}
+              </Text8>
               <Text9>{descrip2}</Text9>
               <Element15>
                 <Text10>+30</Text10>
@@ -80,13 +88,17 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
           </TimberwolfFlexColumn>
           <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
         </Element17>
+      </Link>
+      <Link to={"/join"}>
         <Element17 margin={"0"}>
           <TimberwolfFlexColumn>
             <Biimagefill1
               src={"https://file.rendit.io/n/weYw1jsnsYq7ANvvkajs.svg"}
             />
             <Element14>
-              <Text8>{title3}</Text8>
+              <Text8>
+                {title3}
+              </Text8>
               <Text9>{descrip3}</Text9>
               <Element15>
                 <Text10>+30</Text10>
@@ -118,6 +130,7 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
           </TimberwolfFlexColumn>
           <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
         </Element17>
+      </Link>
       </FlexRow> 
   )
 };
