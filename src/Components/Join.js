@@ -2,10 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 
-const db = {"Wedding%20Day": {
-  "topic" : "wedding cloths",
-  "profile_pic": "https://file.rendit.io/n/kebCCccwja1DBf60XCIh.png",
-  "name" : "Ella",
+const db = {"Wedding Day": {
+  "topic" : "Wedding cloths",
   "user1_pp": "https://file.rendit.io/n/56EbnI9D3l0LFvSNGUz6.png",
   "user1_name": "Iris Rose",
   "user1_dis": "Hey! Is this dress looks nice for a wedding?",
@@ -13,9 +11,20 @@ const db = {"Wedding%20Day": {
   "user2_pp": "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
   "user2_name": "Sara Botnim",
   "user2_dis": "Do you think a white dress will be good for a wedding?"
+},
+"School": {
+  "topic" : "School cloths",
+  "user1_pp": "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
+  "user1_name": "Boby marcus",
+  "user1_dis": "Hey! Is this shirt looks good for school?",
+  "user1_dis_pic": "https:d//file.rendit.io/n/ZQFsQLPJHVp8lfezvcuQ.png",
+  "user2_pp": "https://file.rendit.io/n/56EbnI9D3l0LFvSNGUz6.png",
+  "user2_name": "Sara Botnim",
+  "user2_dis": "Do you think a white dress will be good for a wedding?"
 }}
 export const JoinCommunity = ({}) => {
   const {id} = useParams()
+  console.log(id);
 
   return (
     <JoinCommunityRoot>
@@ -53,7 +62,7 @@ export const JoinCommunity = ({}) => {
         <Line src={"https://file.rendit.io/n/EdzYq0aplOKBkBH1O2Uz.svg"} />
       </Element2>
       <FlexRow>
-        <Text6>{db["Wedding%20Day"].topic}</Text6>
+        <Text6>{db[id].topic}</Text6>
         <Element3>
           <BlueRectangle />
           <Text7>Join Community</Text7>
@@ -76,21 +85,21 @@ export const JoinCommunity = ({}) => {
         </FlexColumn>
       </FlexRow1>
       <Element5>
-        <Image4 src={db["Wedding%20Day"].user1_pp} />
+        <Image4 src={db[id].user1_pp} />
         <NameName>Irish Rose </NameName>
-        <Text10>{db["Wedding%20Day"].user1_dis}</Text10>
+        <Text10>{db[id].user1_dis}</Text10>
         <Text11>24 Comments</Text11>
         <FlexColumn1>
           <Ellipse src={"https://file.rendit.io/n/56EbnI9D3l0LFvSNGUz6.png"} />
-          <Image5 src={db["Wedding%20Day"].user1_dis_pic} />
+          <Image5 src={db[id].user1_dis_pic} />
           <Element6 />
         </FlexColumn1>
       </Element5>
       <Element7>
         <Element8>
           <Image4 src={""} />
-          <NameName>{db["Wedding%20Day"].user2_name}</NameName>
-          <Text10>{db["Wedding%20Day"].user2_dis}</Text10>
+          <NameName>{db[id].user2_name}</NameName>
+          <Text10>{db[id].user2_dis}</Text10>
           <Text11>24 Comments</Text11>
           <FlexRow2>
             <Ellipse2

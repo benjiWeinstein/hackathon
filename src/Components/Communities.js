@@ -49,7 +49,7 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
         <Element17 margin={"0px 66.5px 0px 0px"}>
           <TimberwolfFlexColumn>
             <Biimagefill1
-              src={"https://www.svgrepo.com/show/54409/school.svg"}
+              src={"https://litb-cgis.rightinthebox.com/images/640x853/202103/bps/product/inc/crijph1615031879218.jpg?fmt=webp&v=1"}
             />
             <Element14>
               <Text8>{title2}</Text8>

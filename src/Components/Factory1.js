@@ -81,7 +81,7 @@ const Element10 = styled.div`
   margin: 0px 0px 4.4px 0px;
 `;
 const BAR = styled.div`
-  width: 1375px;
+  width: 100%;
   background-color: #5f6566;
   display: flex;
   position: absolute;
@@ -150,23 +150,26 @@ const Text5 = styled.div`
 `;
 
 const Element11 = styled.div`
-  width: 1119px;
   height: 93.5px;
-  align-self: flex-start;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin: 0px 0px 38.5px 144px;
+  margin: 0px 0px 38.5px 230px;
 `;
 const FACTORY2 = styled.div`
   text-align: center;
-  height: 76px;
   font-size: 40px;
+  height: 100%;
+  align-items: center;
+  display: flex;
   font-family: Noto Sans Hebrew;
   font-weight: 100;
   position: absolute;
   left: 398px;
 `;
 const Line = styled.img`
-  width: 1119px;
+  width: 100%;
   height: 1px;
   position: absolute;
   top: 93px;
@@ -215,7 +218,7 @@ const Element13 = styled.div`
   height: 406px;
   align-self: center;
   position: relative;
-  margin: 0px 68px 0px 0px;
+  margin: 0px 0px 0px 0px;
 `;
 const Text2 = styled.div`
   height: 51px;
@@ -237,8 +240,9 @@ const FACTORY = styled.div`
 const Image38 = styled.img`
   width: 36px;
   height: 36px;
+  align-items: center;
+  display: flex;
   position: absolute;
-  top: 15px;
   left: ${(props) => props.left};
 `;
 const TimberwolfFlexColumn = styled.div`
