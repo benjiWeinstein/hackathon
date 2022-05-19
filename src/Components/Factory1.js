@@ -47,15 +47,7 @@ export const Factory1 = () => {
       </Element12>
 
       <Text7>Communities You May Like</Text7>
-    { Array(3).fill().map(() => { 
-      return <Communities
-        title1={"Wedding"}
-        title2={"School"}
-        title3={"University"}
-        descrip1={"description"}
-        descrip2={"description"}
-        descrip3={"description"}
-      ></Communities>}) }
+    
 
     </FactoryRoot>
   );

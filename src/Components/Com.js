@@ -209,12 +209,11 @@ const Image39 = styled.img`
   position: absolute;
 `;
 const FlexRow1 = styled.div`
-  width: 349px;
+  width: 351px;
   background-image: url("https://file.rendit.io/n/YZLoIcOMWsJTRXydO5sD.svg");
   background-size: cover;
   position: absolute;
   top: 242px;
-  left: 1px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
