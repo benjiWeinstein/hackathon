@@ -50,19 +50,19 @@ export const FactoryNew = () => {
       <FlexColumn>
         <Text8>Communities You May Like</Text8>
         <FlexRow>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>   
+            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Beuatiful, but never in white.`}></Com>
+            <Com title={`Streetwear`} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwEH7T13VYfoLZz-0PdlHB-9JFXLypnHLfuA&usqp=CAU`} descrip={`Can you catch up with the city?`}></Com>
+            <Com title={`Your Favorites Brands`} src={`https://cf.ltkcdn.net/fashion-history/images/orig/196838-480x344-Fashion_Brands.jpg`} descrip={`A group for you and like mined people`}></Com>   
         </FlexRow>
         <FlexRow>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>   
+            <Com title={`Skateboarding`} src={`https://www.liveabout.com/thmb/XZZCqjrbkW-CfaUHDHN6jPEdAI8=/2715x2715/smart/filters:no_upscale()/man-on-skateboard-in-mid-air-114997351-5a29a61822fa3a0037fac8a4.jpg`} descrip={`Skate in style, be with style.`}></Com>
+            <Com title={`Color Matching`} src={`https://i.pinimg.com/originals/c9/0a/5b/c90a5b04193696b788ccc33d0d97737a.jpg`} descrip={`Is this good with that? let us decide`}></Com>
+            <Com title={`Poolwear`} src={`https://us.123rf.com/450wm/dmitrytsvetkov/dmitrytsvetkov1806/dmitrytsvetkov180601769/103354008-young-slim-tanned-woman-in-black-swimsuit-posing-against-blue-background-fashion-portrait-of-beautif.jpg?ver=6`} descrip={`Don't forget the sunscreen!`}></Com>   
         </FlexRow>
         <FlexRow>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>
-            <Com title={`Weddings in Tel Aviv`} src={`https://file.rendit.io/n/750GMhe5n11oN822x2zb.png`} descrip={`Description`}></Com>   
+            <Com title={`Cocktail Evening`} src={`https://www.beyoung.in/blog/wp-content/uploads/2018/11/wirh-accessories.jpg`} descrip={`We can also recommend actual cocktails`}></Com>
+            <Com title={`Party Look`} src={`https://ae05.alicdn.com/kf/Hca06b9eabc0641ea90cb53237741418eO/Sexy-Faux-Leather-Dress-Backless-Club-Party-Short-Dress-Solid-Black-Wet-Look-Latex-Bodycon-Push.jpg`} descrip={`We know how to party here`}></Com>
+            <Com title={`90's`} src={`https://target.scene7.com/is/image/Target/GUEST_0e1b6b3e-274c-4c3b-a01e-e0de0a1a646a?wid=1000&hei=1000`} descrip={`Dress like you really want.`}></Com>   
         </FlexRow>
       </FlexColumn>
     </FactoryRoot>
