@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-export const JoinCommunity = ({}) => {
+import { useParams } from "react-router-dom";
+export const JoinCommunity = () => {
+  const {id} = useParams()
   return (
     <JoinCommunityRoot>
       <Element1>
@@ -37,7 +39,7 @@ export const JoinCommunity = ({}) => {
         <Line src={"https://file.rendit.io/n/EdzYq0aplOKBkBH1O2Uz.svg"} />
       </Element2>
       <FlexRow>
-        <Text6>Weddings in Tel Aviv</Text6>
+        <Text6>{`${id}`}</Text6>
         <Element3>
           <BlueRectangle />
           <Text7>Join Community</Text7>
