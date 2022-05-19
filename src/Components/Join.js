@@ -1,5 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+
+db = {"wedding": {
+  "topic" : "wedding cloths",
+  "profile_pic": "https://file.rendit.io/n/kebCCccwja1DBf60XCIh.png",
+  "name" : "Ella",
+  "user1_pp": "https://file.rendit.io/n/56EbnI9D3l0LFvSNGUz6.png",
+  "user1_name": "Iris Rose",
+  "user1_dis": "Hey! this dress looks nice for a wedding?",
+  "user1_dis_pic": "https://file.rendit.io/n/ZQFsQLPJHVp8lfezvcuQ.png",
+  "user2_pp": "https://file.rendit.io/n/uJAnQjKIZnYmUpK8QOsW.png",
+  "user2_name": "Sara",
+  "user2_dis": "Botnim"
+}}
+
 export const JoinCommunity = ({}) => {
   return (
     <JoinCommunityRoot>
@@ -47,7 +61,7 @@ export const JoinCommunity = ({}) => {
         <Ellipse2 src={"https://file.rendit.io/n/kebCCccwja1DBf60XCIh.png"} />
         <FlexColumn>
           <TimberwolfFlexRow>
-            <Text8>What’s on your mind, NAME?</Text8>
+            <Text8>What’s on your mind, Ella?</Text8>
           </TimberwolfFlexRow>
           <Element4>
             <WhiteFlexRow1>
@@ -61,7 +75,7 @@ export const JoinCommunity = ({}) => {
       </FlexRow1>
       <Element5>
         <Image4 src={"https://file.rendit.io/n/joNCnGHjG2pRfYJ36vpQ.svg"} />
-        <NameName>Name Name </NameName>
+        <NameName>Irish Rose </NameName>
         <Text10>Post Description\Discuss?</Text10>
         <Text11>24 Comments</Text11>
         <FlexColumn1>
