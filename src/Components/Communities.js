@@ -11,6 +11,7 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
               src={"https://pic.onlinewebfonts.com/svg/img_62825.png"}
             />
             <Element14>
+              
               <Text8>{title1}</Text8>
               <Text9>{descrip1}</Text9>
               <Element15>
