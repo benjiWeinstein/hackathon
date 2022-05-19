@@ -4,7 +4,7 @@ import { Link  } from "react-router-dom";
 const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => {
   return (
     <FlexRow>
-      <Link to={"/join"}>
+      <Link to={`/join/${title1}`}>
         <Element13>
           <TimberwolfFlexColumn>
             <Biimagefill1
@@ -45,7 +45,7 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
           <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
         </Element13>
       </Link>
-      <Link to={`/join#${title2}`}>
+      <Link to={`/join/${title2}`}>
         <Element17 margin={"0px 66.5px 0px 0px"}>
           <TimberwolfFlexColumn>
             <Biimagefill1
@@ -85,7 +85,7 @@ const Communities = ({title1, descrip1,title2, descrip2, title3, descrip3 }) => 
           <Line2 src={"https://file.rendit.io/n/r9xsC4vUBmMngixo0FJV.svg"} />
         </Element17>
       </Link>
-      <Link to={"/join"}>
+      <Link to={`/join/${title3}`}>
         <Element17 margin={"0"}>
           <TimberwolfFlexColumn>
             <Biimagefill1
