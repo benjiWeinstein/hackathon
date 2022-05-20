@@ -1,17 +1,17 @@
-import { Link } from '@mui/material';
 import React from 'react'
 import styled from "styled-components";
+import { useHistory } from 'react-router-dom';
 
 
-const Chooser = ({width,text}) => {
+
+const Chooser = ({width,text,id}) => {
   const link = text.toLowerCase()
+  console.log(`/${link}`)
+  let history = useHistory();
   return (
-    <Link to={`/${link}/sdzdsc`}>
-     <div onClick={()=>console.log("CLICKED",  `/${link}`)}>
+    <div onClick={()=>{history.push(`/${link}/`);}}>
         <Text10 width={width}>{text}</Text10>
-        {/* {text} */}
-      </div>
-      </Link>  
+    </div>
   )
 }
 const Text10 = styled.div`

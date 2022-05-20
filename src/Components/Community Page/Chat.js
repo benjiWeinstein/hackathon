@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-export const Chat = ({}) => {
+import { useParams } from "react-router-dom";
+import Chooser from "./choose";
+export const Chat = () => {
+  let { id } = useParams();
   return (
     <NewRootRoot>
       <Chat1>
@@ -103,9 +106,12 @@ export const Chat = ({}) => {
               childText: "Chat",
               width: "124px",
             },
-          ].map((data) => (
-            <Text10 width={data.width}>{data.childText}</Text10>
-          ))}
+          ].map((data) => {
+            const width = data.width
+            const text = data.childText
+            console.log(data)
+           return <Chooser width={width} text={text} id={id}></Chooser>
+          })}
         </FlexRow1>
         <Line3 src={"https://file.rendit.io/n/uYlIkLKQyd6jL9csUUcK.svg"} />
         <Line2 src={"https://file.rendit.io/n/duzMd6LjNgZiftqoNNlE.svg"} />

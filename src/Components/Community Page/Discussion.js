@@ -2,8 +2,10 @@ import { Input } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import Chooser from "./choose";
-export const Discussion = ({}) => {
+import { useParams } from "react-router-dom";
+export const Discussion = () => {
     const postDescrip = "This is a post description \n blablablaBla bla bla"
+    let { id } = useParams();
   return (
     <JoinCommunityRoot>
       <Element2>
@@ -103,7 +105,7 @@ export const Discussion = ({}) => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
+         return <Chooser width={width} text={text} id={id}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/8YNwROZMo5C6E7VGcpcy.svg"} />

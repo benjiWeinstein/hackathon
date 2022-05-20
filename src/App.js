@@ -22,9 +22,9 @@ return(
             <Route  path={"/discussion"}>
                 <Discussion></Discussion>
             </Route>
-            <Route path={"/discussion/:id"} children={<Discussion/>}></Route>
-            <Route path={"/about/:id"} children={<About/>}></Route>
-            <Route path={"/chat/:id"} children={<Chat/>}></Route>
+            {/* <Route path={"/discussion/:id"} children={<Discussion/>}></Route> */}
+            <Route path={"/about"} children={<About/>}></Route>
+            <Route path={"/chat"} ><Chat/></Route>
 
 
 
