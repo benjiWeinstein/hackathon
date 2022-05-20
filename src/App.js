@@ -3,14 +3,14 @@ import { Discussion } from "./Components/Community Page/Discussion";
 import { About } from "./Components/Community Page/About";
 import { FactoryNew } from "./Components/Home Page/Home";
 import { Chat } from "./Components/Community Page/Chat";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 
 export default function App() {
-    // useEffect(() => {
-    //     // document.body.style.zoom = "70%";q
+    useEffect(() => {
+        document.body.style.zoom = "88%";
 
-    //   }, []);
+      }, []);
 document.body.style.backgroundColor = '#f5f5f5';
 document.body.style.margin = '0';
 return(

@@ -13,7 +13,8 @@ const NewPost = () => {
             />
             <FlexColumn3 gap={"6px"}>
               <Text6 margin={"0"}>You</Text6>
-              <Text18>Post Description\Discuss?</Text18>
+              <Text18>Looking for shoes to match this amazing yellow dress!</Text18>
+              <br></br>
             </FlexColumn3>
           </FlexRow7>
           

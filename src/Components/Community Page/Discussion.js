@@ -6,7 +6,7 @@ import { useState } from "react";
 import NewPost from "./NewPost";
 export const Discussion = () => {
   const [showPost,setShowPost] = useState(false)
-    const postDescrip = "This is a post description \n blablablaBla bla bla"
+    const postDescrip = "Anyone have reccomendations for a similar dress? Maybe in blue?"
     const arr = window.location.pathname.split('/');
     const id = arr[arr.length - 1];
   return (
@@ -46,7 +46,7 @@ export const Discussion = () => {
       </Element3>
       <FlexRow>
         <FlexColumn>
-          <Text6 margin={"0"}>{id}</Text6>
+          <Text6 margin={"0"}>{id.replaceAll("%20", " ")}</Text6>
           <Element4>
             <Ellipse>
               <Ellipse1>
@@ -108,7 +108,7 @@ export const Discussion = () => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
+         return <Chooser width={width} text={text} id={id}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/8YNwROZMo5C6E7VGcpcy.svg"} />
@@ -118,7 +118,7 @@ export const Discussion = () => {
         <FlexColumn1>
           <WhiteFlexRow2>
             <Text13>
-                <Input type="text" placeholder=" Write something.."></Input>
+                <Input style={{width:"700px"}}type="text" placeholder=" Write something.."></Input>
               </Text13>
           </WhiteFlexRow2>
           <FlexRow2>

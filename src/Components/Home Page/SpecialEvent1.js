@@ -12,7 +12,7 @@ const SpecialEvent = () => {
     <Special
     src={"https://file.rendit.io/n/ynyikOrshspCdkOXFkQ1.png"}
   />
-  {showModal && <BasicModal></BasicModal>}
+  {showModal && <BasicModal heading={"NOT ENOUGH POINTS :("} paragraph={"You need 20 more points to access this EXCLUSIVE event. Go get more points!"}></BasicModal>}
   </div>
   )
 }

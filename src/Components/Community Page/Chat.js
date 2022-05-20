@@ -21,6 +21,7 @@ export const Chat = () => {
  
   const arr = window.location.pathname.split('/');
   const id = arr[arr.length - 1];
+  console.log(id)
   return (
     <NewRootRoot>
       <Chat1>
@@ -61,7 +62,7 @@ export const Chat = () => {
         </Element3>
         <FlexRow>
           <FlexColumn>
-            <Text6>Weddings in Tel Aviv</Text6>
+            <Text6>{id.replaceAll("%20", " ")}</Text6>
             <Element4>
               <Ellipse1>
                 <Ellipse2>
@@ -134,12 +135,12 @@ export const Chat = () => {
         <Line2 src={"https://file.rendit.io/n/duzMd6LjNgZiftqoNNlE.svg"} />
         <Text13>20/05/2022</Text13>
         <BlueFlexRow1>
-          <Text14>Text text text</Text14>
+          <Text14>{`Was so awesome to be at the exclusive party last night! \n`}</Text14>
         </BlueFlexRow1>
         <FlexRow2 padding={"0px 36px"}>
           <Ellipse9 src={"https://file.rendit.io/n/wS2QYN6RHWUemzq4hjYK.png"} />
           <WhiteFlexRow1>
-            <Text10 width={"289px"}>Text text text</Text10>
+            <Text10 width={"fit-content"}>I love being part of this community!</Text10>
           </WhiteFlexRow1>
         </FlexRow2>
         <FlexRow2 padding={"0px 41px"}>
@@ -147,20 +148,23 @@ export const Chat = () => {
             src={"https://file.rendit.io/n/7qav4W0ViGn75jAWWv7d.png"}
           />
           <WhiteFlexRow2>
-            <Text10 width={"289px"}>Text text text</Text10>
+            <Text10 width={"289px"}>Need help. What shoes should go with this suit?</Text10>
+            <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1xOztVl4NMJWFvCHo3UqlARdm2nqkzqNdLnxcI0pNWl-ymuRJjTjVUelv4MdZF3XfjoI&usqp=CAU"} alt={"Nothing"}></img>
           </WhiteFlexRow2>
         </FlexRow2>
 
-        <FlexRow4>
+        {/* <FlexRow4>
           <Ellipse9 src={"https://file.rendit.io/n/wS2QYN6RHWUemzq4hjYK.png"} />
           <WhiteFlexRow3>
-            <Text10 width={"289px"}>Hey respond to me</Text10>
+            <Text10 width={"fit-content"}>I also need a red suit!</Text10>
           </WhiteFlexRow3>
-        </FlexRow4>
+        </FlexRow4> */}
 
         {showResponse && (
           <BlueFlexRow2>
-            <Text14>RESPONSE</Text14>
+            <Text14>What about this one?</Text14>
+            <br></br>
+            <img src={"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRQoUriVqhJLtT3oNnN5Hm2kDwZEyXS8HsEI3dWqm8lrK8XxUEsevOyuqDDEjgNRkk3EwpuT5y2K7g&usqp=CAc"} alt={"Nothing"}></img>
           </BlueFlexRow2>
         )}
 
@@ -199,7 +203,7 @@ export const Chat = () => {
           </div>
         </FlexRow5>
       </Chat1>
-      {showAlert && <BasicModal></BasicModal>}
+      {showAlert && <BasicModal heading={"You have earned 20 Points!"} paragraph={"Now you can access EXCLUSIVE events!"}></BasicModal>}
     </NewRootRoot>
   );
 };
@@ -509,7 +513,7 @@ const Text13 = styled.div`
   margin: 0px 0px 80px 0px;
 `;
 const BlueFlexRow1 = styled.div`
-  width: 491px;
+  width: 500px;
   background-color: #256bf2;
   display: flex;
   align-self: flex-end;
@@ -540,11 +544,11 @@ const WhiteFlexRow2 = styled.div`
   width: 539px;
   background-color: #e5e5ea;
   display: flex;
-  flex-direction: row;
+  flex-direction: space-between;
   justify-content: flex-start;
   align-items: center;
   border-radius: 15px;
-  padding: 34px 29px 160px 29px;
+  padding: 34px 2px 16px 29px;
 `;
 const FlexRow4 = styled.div`
   display: flex;
@@ -575,13 +579,13 @@ const BlueFlexRow2 = styled.div`
   align-items: center;
   border-radius: 15px;
   padding: 34px 54px;
-  margin: 0px 66px 140px 0px;
+  margin: 0px 66px 10px 0px;
 `;
 const FlexRow5 = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 66px 0px 45px;
+  padding: 0px 66px 0px 5px;
 `;
 const Fluentemojiregular = styled.img`
   width: 61px;
@@ -661,8 +665,8 @@ const Text10 = styled.div`
   width: ${(props) => props.width};
 `;
 const Text14 = styled.div`
-  width: 289px;
-  height: 46px;
+  width: fit-content;
+  height: fit-content;
   font-size: 35px;
   font-family: SF Pro Display;
   font-weight: 500;
@@ -674,7 +678,7 @@ const FlexRow2 = styled.div`
   justify-content: flex-start;
   gap: 28px;
   align-items: center;
-  margin: 0px 0px 82px 0px;
+  margin: 10px 10px 8px 0px;
   padding: ${(props) => props.padding};
 `;
 const Ellipse9 = styled.img`

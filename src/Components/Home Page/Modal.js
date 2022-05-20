@@ -16,7 +16,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+export default function BasicModal({heading, paragraph}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -36,11 +36,11 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Not Enough Points
+          <Typography id="modal-modal-title" variant="h1" component="h2">
+           {heading}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            You need 20 more points to access this EXCLUSIVE event. Go get more points!
+          <Typography id="modal-modal-description" variant="h3" component="h2" sx={{ mt: 1 }}>
+            {paragraph}
           </Typography>
         </Box>
       </Modal>
