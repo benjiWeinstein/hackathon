@@ -3,7 +3,39 @@ import styled from "styled-components";
 import Chooser from "./choose";
 import { useParams } from "react-router-dom";
 export const About = ({}) => {
-  let { id } = useParams();
+  // let { id } = useParams();
+
+  const db = {"Weddings%20in%20Tel%20Aviv":{
+    "description": "description about weddings"
+    },
+    "Streetwear":{
+      "description": "description about streetwear"
+      },
+    "Your%20Favorites%20Brands":{
+      "description": "description about your brands"
+    },
+    "Skateboarding":{
+      "description": "description about skateboarding"
+    },
+    "Color%20Matching":{
+      "description": "description about color matching"
+    },
+    "Poolwear":{
+      "description": "description about poolwear"
+    },
+    "Cocktail%20Evening":{
+      "description": "description about cocktail party"
+      },
+    "Party%20Look":{
+      "description": "description about party look"
+    },
+    "90's party":{
+      "description": "description about 90 partyis "
+    },    
+  };  
+  // const arr = window.location.pathname.split('/');
+  // const id = arr[arr.length - 1];
+  // console.log(db[id].description);
   return (
     <AboutRoot>
       <Element1>
@@ -41,7 +73,9 @@ export const About = ({}) => {
       </Element2>
       <FlexRow>
         <FlexColumn>
-          <Text6>Weddings in Tel Aviv</Text6>
+          {/* <Text6>{id.replaceAll("%20"," ")}</Text6> */}
+          <Text6>{"Weddings in Tel Aviv"}</Text6>
+
           <Element3>
             <Ellipse>
               <Ellipse1>
@@ -103,13 +137,14 @@ export const About = ({}) => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}  id={id}></Chooser>
+         return <Chooser width={width} text={text}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/m5DL2QVZkS18voMej1YT.svg"} />
       <Line2 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
       <Element6>
         <Text13>Description</Text13>
+        {/* <Text13>{db[id].description}</Text13> */}
         <Element7 />
       </Element6>
     </AboutRoot>
@@ -402,10 +437,11 @@ const Element6 = styled.div`
   align-self: stretch;
   height: 640px;
   position: relative;
+  width: 100%;
   min-width: 1438px;
 `;
 const Text13 = styled.div`
-  width: 228px;
+  width: 100%;
   height: 46px;
   font-size: 35px;
   font-family: SF Pro Display;
