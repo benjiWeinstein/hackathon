@@ -108,7 +108,7 @@ export const Discussion = () => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
+         return <Chooser width={width} text={text} id={id}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/8YNwROZMo5C6E7VGcpcy.svg"} />

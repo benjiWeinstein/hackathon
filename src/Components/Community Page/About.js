@@ -6,7 +6,8 @@ export const About = ({}) => {
   // let { id } = useParams();
 
   const db = {"Weddings%20in%20Tel%20Aviv":{
-    "description": "A place to share and discuss any kind of wedding outfit."
+    "description": "A place to share and discuss any kind of wedding outfit.",
+    "image": "https://litb-cgis.rightinthebox.com/images/640x853/202103/bps/product/inc/crijph1615031879218.jpg?fmt=webp&v=1"
     },
     "Streetwear":{
       "description": "Casual, comfortable pieces such as jeans, T-shirts, baseball caps, and sneakers"
@@ -140,8 +141,9 @@ export const About = ({}) => {
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/m5DL2QVZkS18voMej1YT.svg"} />
       <Line2 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
-      <Element6>
+      <Element6 >
         <Text13>{db[id].description}</Text13>
+        <Image39 src={db[id].image}/>
         <Element7 />
       </Element6>
     </AboutRoot>
@@ -196,6 +198,14 @@ const WhiteRectangle = styled.div`
   height: 64px;
   background-color: #ffffff;
   margin: 0px 414px 0px 0px;
+`;
+const Image39 = styled.img`
+  border-radius: 20px;
+  position: absolute;
+  padding: 100px 100px 200px 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 `;
 const WhiteFlexRow = styled.div`
   border-width: 1px;
