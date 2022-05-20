@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { JoinCommunity } from "./Components/Community Page/join";
+import { Discussion } from "./Components/Community Page/Discussion";
+import { About } from "./Components/Community Page/About";
 import { FactoryNew } from "./Components/Home Page/Home";
+import { Chat } from "./Components/Community Page/Chat";
 // import { useEffect } from "react";
 
 
@@ -17,8 +19,14 @@ return(
             <Route exact path={"/"}>
                 <FactoryNew/>
             </Route>
-            <Route path={"/join/:id"} children={<JoinCommunity/>}>
+            <Route  path={"/discussion"}>
+                <Discussion></Discussion>
             </Route>
+            {/* <Route path={"/discussion/:id"} children={<Discussion/>}></Route> */}
+            <Route path={"/about"} children={<About/>}></Route>
+            <Route path={"/chat"} ><Chat/></Route>
+
+
 
         </Switch>
     </Router>

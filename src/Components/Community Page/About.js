@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import Chooser from "./choose";
+import { useParams } from "react-router-dom";
+export const About = ({}) => {
+  // let { id } = useParams();
 
-export const JoinCommunity = ({}) => {
   const db = {"Weddings%20in%20Tel%20Aviv":{
     "description": "A place to share and discuss any kind of wedding outfit."
     },
@@ -30,21 +33,21 @@ export const JoinCommunity = ({}) => {
       "description": "Lets go a while back to the most colourful party"
     },    
   };  
-  const arr = window.location.pathname.split('/');
-  const id = arr[arr.length - 1];
-  console.log(db[id].description);
+  // const arr = window.location.pathname.split('/');
+  // const id = arr[arr.length - 1];
+  // console.log(db[id].description);
   return (
-    <JoinCommunityRoot>
+    <AboutRoot>
       <Element1>
         <BAR>
-          <Israel src={"https://file.rendit.io/n/1BxDam4xK5ZJppGHwWsD.svg"} />
+          <Israel src={"https://file.rendit.io/n/d9TYpPtkuy9KATJkvqFD.svg"} />
           <Text1>HE</Text1>
           <Text2 width={"106px"}>WOMEN</Text2>
           <Text2 width={"59px"}>MEN</Text2>
-          <Text4>KIDS</Text4>
+          <Text2 width={"65px"}>KIDS</Text2>
           <WhiteRectangle />
           <WhiteFlexRow>
-            <Image1 src={"https://file.rendit.io/n/rxEg8DVKrfUGT6LroX14.svg"} />
+            <Image1 src={"https://file.rendit.io/n/ipZvYgh9GTR1dDVcSVle.svg"} />
           </WhiteFlexRow>
         </BAR>
         <Text5>OUR COMMUNITY</Text5>
@@ -55,65 +58,67 @@ export const JoinCommunity = ({}) => {
           <FACTORY fontWeight={"600"}>5 4</FACTORY>
         </FACTORY2>
         <Image2
-          src={"https://file.rendit.io/n/q9q7yPKW5FKIEJoq2DS8.svg"}
+          src={"https://file.rendit.io/n/ZSkA8wnIo4shH1oCCzGU.svg"}
           left={"136px"}
         />
         <Image2
-          src={"https://file.rendit.io/n/61SQLuaL3tn1mXPNQ7x3.svg"}
+          src={"https://file.rendit.io/n/XMNdVlSoodCtGYCjYrms.svg"}
           left={"68px"}
         />
         <Image2
-          src={"https://file.rendit.io/n/cCggg6vDiRRqcyYbrVg5.svg"}
+          src={"https://file.rendit.io/n/PCVwCShv3kgmaJV9xo1A.svg"}
           left={"0px"}
         />
-        <Line src={"https://file.rendit.io/n/yL2Lm64CVtINSWE3jykU.svg"} />
+        <Line src={"https://file.rendit.io/n/NkyAnforJwFGva1fgl0u.svg"} />
       </Element2>
       <FlexRow>
         <FlexColumn>
-          <Text6>{id.replaceAll("%20"," ")}</Text6>
+          {/* <Text6>{id.replaceAll("%20"," ")}</Text6> */}
+          <Text6>{"Weddings in Tel Aviv"}</Text6>
+
           <Element3>
             <Ellipse>
               <Ellipse1>
                 <Bithreedots
-                  src={"https://file.rendit.io/n/yfznGWoGzFV6JDBuFFkO.svg"}
+                  src={"https://file.rendit.io/n/PIwcQAXue6sbJJ0VlO31.svg"}
                 />
               </Ellipse1>
             </Ellipse>
             <Ellipse2
-              src={"https://file.rendit.io/n/64NLcVvBBrV8g7fPamVg.png"}
+              src={"https://file.rendit.io/n/f8WIrW7qeSclMio9klu9.png"}
             />
             <Ellipse3
-              src={"https://file.rendit.io/n/2MUKjH35eQ7W1IK7sgQN.png"}
+              src={"https://file.rendit.io/n/AK1EGllP9UEbeI4vI41O.png"}
             />
             <Ellipse4
-              src={"https://file.rendit.io/n/CPaVAJQr6NvbjmY2C5in.png"}
+              src={"https://file.rendit.io/n/bAcxj26VWPz2TKFZ7vpA.png"}
             />
             <Ellipse5
-              src={"https://file.rendit.io/n/BDXKmIScjhLSxGqCwkyX.png"}
+              src={"https://file.rendit.io/n/rO4sN8bOtNqtgtZGVpXk.png"}
             />
             <Ellipse6
-              src={"https://file.rendit.io/n/sPQqd3AnIwRoiC3gXUEr.png"}
+              src={"https://file.rendit.io/n/rOt9F3mNDYUPmmNA9iXZ.png"}
             />
             <Text7>33 Members</Text7>
             <Ellipse7
-              src={"https://file.rendit.io/n/9O36Gi8UHYl9noYGuE2Q.png"}
+              src={"https://file.rendit.io/n/S6o5IpRxsBqlUEDFEJ4d.png"}
             />
           </Element3>
         </FlexColumn>
         <Element4>
           <BlueFlexRow>
-            <Image3 src={"https://file.rendit.io/n/SBjpCcN7VwkPkR18oZfE.svg"} />
+            <Image3 src={"https://file.rendit.io/n/K18skC6qNILgS5CapEnZ.svg"} />
           </BlueFlexRow>
           <Text8>Join Community</Text8>
         </Element4>
         <Element5>
           <ScreaminGreenFlexRow>
-            <Image3 src={"https://file.rendit.io/n/wwtdtfGlDZWGYei7boFT.svg"} />
+            <Image3 src={"https://file.rendit.io/n/FqjKft34bp8iBNoefj4T.svg"} />
           </ScreaminGreenFlexRow>
           <Text9>Invite</Text9>
         </Element5>
       </FlexRow>
-      <Line1 src={"https://file.rendit.io/n/jmzGfkNoyNiDcvMPFgN4.svg"} />
+      <Line1 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
       <FlexRow1>
         {[
           {
@@ -128,20 +133,24 @@ export const JoinCommunity = ({}) => {
             childText: "Chat",
             width: "124px",
           },
-        ].map((data) => (
-          <Text10 width={data.width}>{data.childText}</Text10>
-        ))}
+        ].map((data) => {
+          const width = data.width
+          const text = data.childText
+          console.log(data)
+         return <Chooser width={width} text={text}></Chooser>
+        })}
       </FlexRow1>
-      <Line3 src={"https://file.rendit.io/n/DNRY1xhaW1oAOEwqTubL.svg"} />
-      <Line2 src={"https://file.rendit.io/n/jmzGfkNoyNiDcvMPFgN4.svg"} />
+      <Line3 src={"https://file.rendit.io/n/m5DL2QVZkS18voMej1YT.svg"} />
+      <Line2 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
       <Element6>
-        <Text13>{db[id].description}</Text13>
+        <Text13>Description</Text13>
+        {/* <Text13>{db[id].description}</Text13> */}
         <Element7 />
       </Element6>
-    </JoinCommunityRoot>
+    </AboutRoot>
   );
 };
-const JoinCommunityRoot = styled.div`
+const AboutRoot = styled.div`
   border-width: 1px;
   border-color: #000000;
   border-style: solid;
@@ -156,10 +165,11 @@ const JoinCommunityRoot = styled.div`
   align-items: flex-start;
 `;
 const Element1 = styled.div`
-height: 71px;
-position: relative;
-min-width: 1438px;
-margin: 0px 0px 42px 0px;
+  align-self: stretch;
+  height: 71px;
+  position: relative;
+  min-width: 1438px;
+  margin: 0px 0px 31px 0px;
 `;
 const BAR = styled.div`
 width: 1375px;
@@ -184,20 +194,11 @@ const Text1 = styled.div`
   color: #ffffff;
   margin: 0px 63px 0px 0px;
 `;
-const Text4 = styled.div`
-width: 49px;
-height: 31px;
-font-size: 25px;
-font-family: SF Pro Display;
-font-weight: 500;
-color: #ffffff;
-margin: 0px 63px 0px 0px;
-`;
 const WhiteRectangle = styled.div`
-width: 281px;
-height: 64px;
-background-color: #ffffff;
-margin: 0px 414px 0px 0px;
+  width: 281px;
+  height: 64px;
+  background-color: #ffffff;
+  margin: 0px 414px 0px 0px;
 `;
 const WhiteFlexRow = styled.div`
   border-width: 1px;
@@ -282,7 +283,7 @@ const Element3 = styled.div`
   min-width: 459px;
 `;
 const Ellipse = styled.div`
-  background-image: url("https://file.rendit.io/n/1h2RacjknPIMSGoYvaT1.png");
+  background-image: url("https://file.rendit.io/n/jMWaFhFfZBLwLuv0PaKB.png");
   background-size: cover;
   position: absolute;
   left: 402px;
@@ -293,7 +294,7 @@ const Ellipse = styled.div`
 `;
 const Ellipse1 = styled.div`
   height: 57px;
-  background-image: url("https://file.rendit.io/n/7A2ijHYui37SEeo1n6sA.svg");
+  background-image: url("https://file.rendit.io/n/HUUt9EIvMA5i1sTdneSi.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;

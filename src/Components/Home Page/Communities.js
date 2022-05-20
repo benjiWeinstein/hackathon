@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Com = ({ src, descrip, title }) => {
   return (
-    <Link to={`/join/${title}`}>
+    <Link to={`/about/${title}`}>
       <Element13>
         <Image39 src={`${src}`} />
         <FlexRow1>
