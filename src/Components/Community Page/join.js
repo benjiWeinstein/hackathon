@@ -3,31 +3,31 @@ import styled from "styled-components";
 
 export const JoinCommunity = ({}) => {
   const db = {"Weddings%20in%20Tel%20Aviv":{
-    "description": "description about weddings"
+    "description": "A place to share and discuss any kind of wedding outfit."
     },
     "Streetwear":{
-      "description": "description about streetwear"
+      "description": "Casual, comfortable pieces such as jeans, T-shirts, baseball caps, and sneakers"
       },
     "Your%20Favorites%20Brands":{
-      "description": "description about your brands"
+      "description": "We notice that you like Gucci and Prada, they like them too"
     },
     "Skateboarding":{
-      "description": "description about skateboarding"
+      "description": "It's fit for your streetwear look"
     },
     "Color%20Matching":{
-      "description": "description about color matching"
+      "description": "Sometimes it's hard to know what fits what, let them hekp you."
     },
     "Poolwear":{
-      "description": "description about poolwear"
+      "description": "We are all getting a little wet sometimes"
     },
     "Cocktail%20Evening":{
-      "description": "description about cocktail party"
+      "description": "It's hard to choose outfit for this classic events"
       },
     "Party%20Look":{
-      "description": "description about party look"
+      "description": "The group to discuss the clother about your wiled parties"
     },
     "90's party":{
-      "description": "description about 90 partyis "
+      "description": "Lets go a while back to the most colourful party"
     },    
   };  
   const arr = window.location.pathname.split('/');
@@ -145,7 +145,7 @@ const JoinCommunityRoot = styled.div`
   border-width: 1px;
   border-color: #000000;
   border-style: solid;
-  height: 1935px;
+  height: 1948px;
   background-color: #ffffff;
   display: flex;
   overflow: hidden;
@@ -156,20 +156,19 @@ const JoinCommunityRoot = styled.div`
   align-items: flex-start;
 `;
 const Element1 = styled.div`
-  align-self: stretch;
-  height: 66.6px;
-  position: relative;
-  min-width: 1438px;
-  margin: 0px 0px 35.4px 0px;
+height: 71px;
+position: relative;
+min-width: 1438px;
+margin: 0px 0px 42px 0px;
 `;
 const BAR = styled.div`
-  width: 1375px;
-  background-color: #5f6566;
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 29px 0px 34px;
+width: 1375px;
+background-color: #5f6566;
+display: flex;
+position: absolute;
+flex-direction: row;
+align-items: center;
+padding: 0px 29px 0px 34px;
 `;
 const Israel = styled.img`
   width: 37px;
@@ -186,20 +185,19 @@ const Text1 = styled.div`
   margin: 0px 63px 0px 0px;
 `;
 const Text4 = styled.div`
-  width: 65px;
-  height: 51px;
-  font-size: 25px;
-  font-family: Noto Sans Hebrew;
-  font-weight: 400;
-  color: #ffffff;
-  align-self: flex-end;
-  margin: 0px 136px 0px 0px;
+width: 49px;
+height: 31px;
+font-size: 25px;
+font-family: SF Pro Display;
+font-weight: 500;
+color: #ffffff;
+margin: 0px 63px 0px 0px;
 `;
 const WhiteRectangle = styled.div`
-  width: 308px;
-  height: 64px;
-  background-color: #ffffff;
-  margin: 0px 286px 0px 0px;
+width: 281px;
+height: 64px;
+background-color: #ffffff;
+margin: 0px 414px 0px 0px;
 `;
 const WhiteFlexRow = styled.div`
   border-width: 1px;
@@ -222,14 +220,14 @@ const Image1 = styled.img`
   height: 17.9px;
 `;
 const Text5 = styled.div`
-  width: 352px;
-  height: 53.6px;
+  width: 234px;
+  height: 54px;
   font-size: 25px;
-  font-family: Noto Sans Hebrew;
-  font-weight: 700;
+  font-family: SF Pro Display;
+  font-weight: 600;
   position: absolute;
-  top: 13px;
-  left: 673px;
+  top: 17px;
+  left: 561px;
 `;
 const Element2 = styled.div`
   width: 1119px;
