@@ -203,9 +203,10 @@ const Image39 = styled.img`
   border-radius: 20px;
   position: absolute;
   padding: 100px 100px 200px 200px;
-  margin-left: auto;
+  margin-left: 200px;
   margin-right: auto;
   width: 40%;
+  height: 80%
 `;
 const WhiteFlexRow = styled.div`
   border-width: 1px;
@@ -442,6 +443,7 @@ const Line2 = styled.img`
 `;
 const Element6 = styled.div`
   align-self: stretch;
+  align-items: center;
   height: 640px;
   position: relative;
   width: 100%;
@@ -455,7 +457,7 @@ const Text13 = styled.div`
   font-weight: 300;
   position: absolute;
   top: 39px;
-  left: 192px;
+  left: 290px;
 `;
 const Element7 = styled.div`
   border-width: 1px;
