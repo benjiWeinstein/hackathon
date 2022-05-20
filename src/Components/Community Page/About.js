@@ -6,36 +6,35 @@ export const About = ({}) => {
   // let { id } = useParams();
 
   const db = {"Weddings%20in%20Tel%20Aviv":{
-    "description": "description about weddings"
+    "description": "A place to share and discuss any kind of wedding outfit."
     },
     "Streetwear":{
-      "description": "description about streetwear"
+      "description": "Casual, comfortable pieces such as jeans, T-shirts, baseball caps, and sneakers"
       },
     "Your%20Favorites%20Brands":{
-      "description": "description about your brands"
+      "description": "We notice that you like Gucci and Prada, they like them too"
     },
     "Skateboarding":{
-      "description": "description about skateboarding"
+      "description": "It's fit for your streetwear look"
     },
     "Color%20Matching":{
-      "description": "description about color matching"
+      "description": "Sometimes it's hard to know what fits what, let them hekp you."
     },
     "Poolwear":{
-      "description": "description about poolwear"
+      "description": "We are all getting a little wet sometimes"
     },
     "Cocktail%20Evening":{
-      "description": "description about cocktail party"
+      "description": "It's hard to choose outfit for this classic events"
       },
     "Party%20Look":{
-      "description": "description about party look"
+      "description": "The group to discuss the clother about your wiled parties"
     },
     "90's party":{
-      "description": "description about 90 partyis "
+      "description": "Lets go a while back to the most colourful party"
     },    
   };  
-  // const arr = window.location.pathname.split('/');
-  // const id = arr[arr.length - 1];
-  // console.log(db[id].description);
+  const arr = window.location.pathname.split('/');
+  const id = arr[arr.length - 1];
   return (
     <AboutRoot>
       <Element1>
@@ -73,8 +72,7 @@ export const About = ({}) => {
       </Element2>
       <FlexRow>
         <FlexColumn>
-          {/* <Text6>{id.replaceAll("%20"," ")}</Text6> */}
-          <Text6>{"Weddings in Tel Aviv"}</Text6>
+          <Text6>{id.replaceAll("%20", " ")}</Text6>
 
           <Element3>
             <Ellipse>
@@ -137,14 +135,13 @@ export const About = ({}) => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
+         return <Chooser width={width} text={text} id={id}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/m5DL2QVZkS18voMej1YT.svg"} />
       <Line2 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
       <Element6>
-        <Text13>Description</Text13>
-        {/* <Text13>{db[id].description}</Text13> */}
+        <Text13>{db[id].description}</Text13>
         <Element7 />
       </Element6>
     </AboutRoot>
@@ -154,7 +151,7 @@ const AboutRoot = styled.div`
   border-width: 1px;
   border-color: #000000;
   border-style: solid;
-  height: 1935px;
+  height: 1948px;
   background-color: #ffffff;
   display: flex;
   overflow: hidden;
@@ -172,13 +169,13 @@ const Element1 = styled.div`
   margin: 0px 0px 31px 0px;
 `;
 const BAR = styled.div`
-  width: 1375px;
-  background-color: #5f6566;
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 29px 0px 34px;
+width: 1375px;
+background-color: #5f6566;
+display: flex;
+position: absolute;
+flex-direction: row;
+align-items: center;
+padding: 0px 29px 0px 34px;
 `;
 const Israel = styled.img`
   width: 37px;

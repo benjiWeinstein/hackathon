@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
 import Chooser from "./choose";
 import { Input } from "@mui/material";
 import { useState } from "react";
@@ -19,7 +18,9 @@ export const Chat = () => {
 
   },[showReturn])
 
-  let { id } = useParams();
+ 
+  const arr = window.location.pathname.split('/');
+  const id = arr[arr.length - 1];
   return (
     <NewRootRoot>
       <Chat1>

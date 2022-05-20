@@ -7,6 +7,8 @@ import NewPost from "./NewPost";
 export const Discussion = () => {
   const [showPost,setShowPost] = useState(false)
     const postDescrip = "This is a post description \n blablablaBla bla bla"
+    const arr = window.location.pathname.split('/');
+    const id = arr[arr.length - 1];
   return (
     <JoinCommunityRoot>
       <Element2>
@@ -44,7 +46,7 @@ export const Discussion = () => {
       </Element3>
       <FlexRow>
         <FlexColumn>
-          <Text6 margin={"0"}>Weddings in Tel Aviv</Text6>
+          <Text6 margin={"0"}>{id}</Text6>
           <Element4>
             <Ellipse>
               <Ellipse1>

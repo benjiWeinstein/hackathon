@@ -53,6 +53,7 @@ const Element13 = styled.div`
 const Image39 = styled.img`
   width: 384px;
   height: 404px;
+  border-radius: 20px;
   position: absolute;
 `;
 const FlexRow1 = styled.div`
@@ -61,12 +62,12 @@ const FlexRow1 = styled.div`
   background-size: cover;
   position: absolute;
   top: 242px;
-  left: 0px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 19px 17px;
+  transform: scaleY(1);
 
 `;
 const Element14 = styled.div`
