@@ -9,7 +9,7 @@ const Chooser = ({width,text,id}) => {
   console.log(`/${link}`)
   let history = useHistory();
   return (
-    <div onClick={()=>{history.push(`/${link}/`);}}>
+    <div onClick={()=>{history.push(`/${link}/${id}`);}}>
         <Text10 width={width}>{text}</Text10>
     </div>
   )

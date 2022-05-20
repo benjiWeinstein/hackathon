@@ -2,10 +2,10 @@ import { Input } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import Chooser from "./choose";
-import { useParams } from "react-router-dom";
 export const Discussion = () => {
     const postDescrip = "This is a post description \n blablablaBla bla bla"
-    let { id } = useParams();
+    const arr = window.location.pathname.split('/');
+    const id = arr[arr.length - 1];
   return (
     <JoinCommunityRoot>
       <Element2>

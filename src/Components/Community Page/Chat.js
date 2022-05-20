@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import Chooser from "./choose";
 export const Chat = () => {
-  let { id } = useParams();
+  const arr = window.location.pathname.split('/');
+  const id = arr[arr.length - 1];
   return (
     <NewRootRoot>
       <Chat1>

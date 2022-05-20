@@ -33,9 +33,8 @@ export const About = ({}) => {
       "description": "Lets go a while back to the most colourful party"
     },    
   };  
-  // const arr = window.location.pathname.split('/');
-  // const id = arr[arr.length - 1];
-  // console.log(db[id].description);
+  const arr = window.location.pathname.split('/');
+  const id = arr[arr.length - 1];
   return (
     <AboutRoot>
       <Element1>
@@ -73,8 +72,7 @@ export const About = ({}) => {
       </Element2>
       <FlexRow>
         <FlexColumn>
-          {/* <Text6>{id.replaceAll("%20"," ")}</Text6> */}
-          <Text6>{"Weddings in Tel Aviv"}</Text6>
+          <Text6>{id.replaceAll("%20", " ")}</Text6>
 
           <Element3>
             <Ellipse>
@@ -137,14 +135,13 @@ export const About = ({}) => {
           const width = data.width
           const text = data.childText
           console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
+         return <Chooser width={width} text={text} id={id}></Chooser>
         })}
       </FlexRow1>
       <Line3 src={"https://file.rendit.io/n/m5DL2QVZkS18voMej1YT.svg"} />
       <Line2 src={"https://file.rendit.io/n/8EPwYWAlKw6kzaD1fsfB.svg"} />
       <Element6>
-        <Text13>Description</Text13>
-        {/* <Text13>{db[id].description}</Text13> */}
+        <Text13>{db[id].description}</Text13>
         <Element7 />
       </Element6>
     </AboutRoot>
