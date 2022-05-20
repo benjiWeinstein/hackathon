@@ -3,6 +3,7 @@ import { Discussion } from "./Components/Community Page/Discussion";
 import { About } from "./Components/Community Page/About";
 import { FactoryNew } from "./Components/Home Page/Home";
 import { Chat } from "./Components/Community Page/Chat";
+import { Post2 } from "./Components/testy";
 // import { useEffect } from "react";
 
 
@@ -25,6 +26,8 @@ return(
             {/* <Route path={"/discussion/:id"} children={<Discussion/>}></Route> */}
             <Route path={"/about"} children={<About/>}></Route>
             <Route path={"/chat"} ><Chat/></Route>
+            <Route path={"/test"} ><Post2/></Route>
+
 
 
 

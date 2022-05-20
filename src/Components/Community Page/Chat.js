@@ -2,7 +2,23 @@ import React from "react";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import Chooser from "./choose";
+import { Input } from "@mui/material";
+import { useState } from "react";
+import { useEffect } from "react";
+import BasicModal from "../Home Page/Modal";
 export const Chat = () => {
+  const [showResponse, setShowResponse] = useState(false);
+  const [showReturn, setShowReturn] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  useEffect(()=>{
+    if (showReturn){
+      setTimeout(()=>{
+        setShowAlert(!showAlert);     
+      }, 2000)
+    }
+
+  },[showReturn])
+
   let { id } = useParams();
   return (
     <NewRootRoot>
@@ -107,10 +123,10 @@ export const Chat = () => {
               width: "124px",
             },
           ].map((data) => {
-            const width = data.width
-            const text = data.childText
-            console.log(data)
-           return <Chooser width={width} text={text} id={id}></Chooser>
+            const width = data.width;
+            const text = data.childText;
+            console.log(data);
+            return <Chooser width={width} text={text} id={id}></Chooser>;
           })}
         </FlexRow1>
         <Line3 src={"https://file.rendit.io/n/uYlIkLKQyd6jL9csUUcK.svg"} />
@@ -133,30 +149,56 @@ export const Chat = () => {
             <Text10 width={"289px"}>Text text text</Text10>
           </WhiteFlexRow2>
         </FlexRow2>
+
         <FlexRow4>
           <Ellipse9 src={"https://file.rendit.io/n/wS2QYN6RHWUemzq4hjYK.png"} />
           <WhiteFlexRow3>
-            <Text10 width={"289px"}>Text text text</Text10>
+            <Text10 width={"289px"}>Hey respond to me</Text10>
           </WhiteFlexRow3>
         </FlexRow4>
-        <BlueFlexRow2>
-          <Text14>Text text text</Text14>
-        </BlueFlexRow2>
+
+        {showResponse && (
+          <BlueFlexRow2>
+            <Text14>RESPONSE</Text14>
+          </BlueFlexRow2>
+        )}
+
+       { showReturn &&
+        <FlexRow4>
+          <Ellipse9 src={"https://file.rendit.io/n/wS2QYN6RHWUemzq4hjYK.png"} />
+          <WhiteFlexRow3>
+            <Text10 width={"289px"}>Cool I bought it</Text10>
+          </WhiteFlexRow3>
+        </FlexRow4>}
+
         <FlexRow5>
           <Fluentemojiregular
             src={"https://file.rendit.io/n/Me1cqG2MEzs0ajtcj9ip.svg"}
           />
           <Image4 src={"https://file.rendit.io/n/3LmQyAlGT3tsumJAuzuY.svg"} />
           <WhiteFlexRow4>
-            <Text19>Start Typing..</Text19>
+            {/* <Text19>Start Typing..</Text19> */}
+            <Input type={"text"} placeholder={"Start Typing..."}></Input>
           </WhiteFlexRow4>
-          <Ellipse>
-            <Akariconssend
-              src={"https://file.rendit.io/n/yWDblEd5JkGNjWkXwkf3.svg"}
-            />
-          </Ellipse>
+          <div
+            onClick={async () => {
+               setTimeout(()=>{
+                 setShowResponse(!showResponse);
+                 setTimeout(()=>{
+                     setShowReturn(!showReturn);     
+                   }, 2000)
+              }, 2000)
+            }}
+          >
+            <Ellipse>
+              <Akariconssend
+                src={"https://file.rendit.io/n/yWDblEd5JkGNjWkXwkf3.svg"}
+              />
+            </Ellipse>
+          </div>
         </FlexRow5>
       </Chat1>
+      {showAlert && <BasicModal></BasicModal>}
     </NewRootRoot>
   );
 };

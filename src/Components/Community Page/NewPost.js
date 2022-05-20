@@ -1,186 +1,65 @@
-import { Input } from "@mui/material";
-import React from "react";
+import React from 'react'
 import styled from "styled-components";
-import Chooser from "./choose";
-import { useState } from "react";
-import NewPost from "./NewPost";
-export const Discussion = () => {
-  const [showPost,setShowPost] = useState(false)
-    const postDescrip = "This is a post description \n blablablaBla bla bla"
-  return (
-    <JoinCommunityRoot>
-      <Element2>
-        <BAR>
-          <Israel src={"https://file.rendit.io/n/n7mjzfEkPussXU6OWHhv.svg"} />
-          <Text1>HE</Text1>
-          <Text2 width={"106px"}>WOMEN</Text2>
-          <Text2 width={"59px"}>MEN</Text2>
-          <Text2 width={"65px"}>KIDS</Text2>
-          <WhiteRectangle />
-          <WhiteFlexRow>
-            <Image1 src={"https://file.rendit.io/n/MZgPBUOfPpHGgmVyb7aY.svg"} />
-          </WhiteFlexRow>
-        </BAR>
-        <Text5>OUR COMMUNITY</Text5>
-      </Element2>
-      <Element3>
-        <FACTORY2>
-          F A C T O R Y<FACTORY fontWeight={"400"}> </FACTORY>
-          <FACTORY fontWeight={"600"}>5 4</FACTORY>
-        </FACTORY2>
-        <Image2
-          src={"https://file.rendit.io/n/KocRr8UPqKuSewV2BaYc.svg"}
-          left={"136px"}
-        />
-        <Image2
-          src={"https://file.rendit.io/n/X6mEg7Wiu7yUkLPtFuCE.svg"}
-          left={"68px"}
-        />
-        <Image2
-          src={"https://file.rendit.io/n/Bgl8cQIjc4UdU1S0lIl4.svg"}
-          left={"0px"}
-        />
-        <Line src={"https://file.rendit.io/n/BMTA0iMBeoLnYFNTGtX4.svg"} />
-      </Element3>
-      <FlexRow>
-        <FlexColumn>
-          <Text6 margin={"0"}>Weddings in Tel Aviv</Text6>
-          <Element4>
-            <Ellipse>
-              <Ellipse1>
-                <Bithreedots
-                  src={"https://file.rendit.io/n/0tPLCFhopw3KFUrsQkDw.svg"}
-                />
-              </Ellipse1>
-            </Ellipse>
-            <Ellipse2
-              src={"https://file.rendit.io/n/psY2WQIGyx0gHJk2tKPT.png"}
-            />
-            <Ellipse3
-              src={"https://file.rendit.io/n/d4Wvz5jA95b20h8QKDJ9.png"}
-            />
-            <Ellipse4
-              src={"https://file.rendit.io/n/4TjvyMquJKC2FFRVhLmi.png"}
-            />
-            <Ellipse5
-              src={"https://file.rendit.io/n/WMvgXAlyvqixtmhsG0wX.png"}
-            />
-            <Ellipse6
-              src={"https://file.rendit.io/n/YV3qZi6O78Fpr6OBS7qn.png"}
-            />
-            <Text7>33 Members</Text7>
-            <Ellipse7
-              src={"https://file.rendit.io/n/6udpGoi9AoIMfebPzldV.png"}
-            />
-          </Element4>
-        </FlexColumn>
-        <Element5>
-          <BlueFlexRow>
-            <Image3 src={"https://file.rendit.io/n/tKS3GujOSKB4ztlm0hRf.svg"} />
-          </BlueFlexRow>
-          <Text8>Join Community</Text8>
-        </Element5>
-        <Element6>
-          <ScreaminGreenFlexRow>
-            <Image3 src={"https://file.rendit.io/n/2Ddjs7iycVz0DO0T2Xxt.svg"} />
-          </ScreaminGreenFlexRow>
-          <Text9>Invite</Text9>
-        </Element6>
-      </FlexRow>
-      <Line1 src={"https://file.rendit.io/n/Qp8x1EX9PwVKXo1xV8WM.svg"} />
-      <FlexRow1>
-        {[
-          {
-            childText: "About",
-            width: "106px",
-          },
-          {
-            childText: "Discussion",
-            width: "178px",
-          },
-          {
-            childText: "Chat",
-            width: "124px",
-          },
-        ].map((data) => {
-          const width = data.width
-          const text = data.childText
-          console.log(data)
-         return <Chooser width={width} text={text}></Chooser>
-        })}
-      </FlexRow1>
-      <Line3 src={"https://file.rendit.io/n/8YNwROZMo5C6E7VGcpcy.svg"} />
-      <Line2 src={"https://file.rendit.io/n/Qp8x1EX9PwVKXo1xV8WM.svg"} />
-      <WhiteFlexRow1>
-        <Ellipse8 src={"https://file.rendit.io/n/ASBbJzRuxRsoFlVsUJUr.png"} />
-        <FlexColumn1>
-          <WhiteFlexRow2>
-            <Text13>
-                <Input type="text" placeholder=" Write something.."></Input>
-              </Text13>
-          </WhiteFlexRow2>
-          <FlexRow2>
-            <FernFlexRow>
-              <Image4
-                src={"https://file.rendit.io/n/8bmTwU4Y7vrzXgTyBRbz.svg"}
-              />
-              <Text14>Add Photo</Text14>
-            </FernFlexRow>
-            <BlueFlexRow1>
-              <Text15>Post</Text15>
-              <div onClick={()=>{
-                setShowPost(!showPost)
-                console('clicked', showPost)
-              }}>
-                <Akariconssend
-                  src={"https://file.rendit.io/n/jYnwXhyMa6UcN6Wc2i2p.svg"}
-                />
-              </div>
-            </BlueFlexRow1>
-          </FlexRow2>
-        </FlexColumn1>
-      </WhiteFlexRow1>
-      <Text6 margin={"0px 0px 19px 145px"}>Newest Activity</Text6>
-      <br></br>
-      {showPost && <NewPost></NewPost>}
-      <br></br>
-      <WhiteFlexColumn>
-        <FlexRow3>
-          <Ellipse8 src={"https://file.rendit.io/n/UBPKfxQqIF2BobALjCZw.png"} />
-          <FlexColumn2>
-            <Text6 margin={"0"}>Jenny Goldstein </Text6>
-            <Text17>{`${postDescrip}`}</Text17>
-          </FlexColumn2>
-        </FlexRow3>
-        <Image5 src={"https://file.rendit.io/n/HSeOlqQWzyqa7KWhjlKf.png"} />
-        <FlexRow4>
-          <Ellipse10>
-            <Antdesignliketwotone
-              src={"https://file.rendit.io/n/DKjlwxJDvYlfVBhiH89t.svg"}
-            />
-          </Ellipse10>
-          <Text18>23</Text18>
-          <FlexRow5>
-            <Image6 src={"https://file.rendit.io/n/dhqr0aXnjEz48qXYhwIe.svg"} />
-            <Text19>24 Comments</Text19>
-          </FlexRow5>
-        </FlexRow4>
-        <Line4 src={"https://file.rendit.io/n/CjyiRuVDEYbALjDcWLuu.svg"} />
-        <FlexRow6>
-          <Image7 src={"https://file.rendit.io/n/Ydr7Zu4CXm6Z4jEB1qtM.svg"} />
-          <Text20>Like</Text20>
-          <Line5 src={"https://file.rendit.io/n/pbZECazOiBLUbPgCNIR8.svg"} />
-          <Image8 src={"https://file.rendit.io/n/T0MRCbbNkxXZcNZ6KZGe.svg"} />
-          <Text21>Comment</Text21>
-        </FlexRow6>
-      </WhiteFlexColumn>
-      <br></br>
-      <br></br>
-    </JoinCommunityRoot>
 
-  );
-};
-const JoinCommunityRoot = styled.div`
+
+const NewPost = () => {
+  return (      
+
+        <WhiteFlexColumn1>
+            
+          <FlexRow7>
+            <Ellipse8
+              src={"https://file.rendit.io/n/xEMDNvJzMvKku79ondHK.png"}
+            />
+            <FlexColumn3 gap={"6px"}>
+              <Text6 margin={"0"}>You</Text6>
+              <Text18>Post Description\Discuss?</Text18>
+            </FlexColumn3>
+          </FlexRow7>
+          
+          <Image9
+            src={"https://file.rendit.io/n/gloKeCHEMjFmXa0B6h0J.png"}
+          />
+          <FlexRow4>
+            <Ellipse10
+              backgroundImage={
+                'url("https://file.rendit.io/n/SHVnBnxk0C4cGGGuuakl.svg")'
+              }
+            >
+              <Antdesignliketwotone
+                src={"https://file.rendit.io/n/YySaQAkZZzpnXf3SxTU0.svg"}
+              />
+            </Ellipse10>
+            <Text19>0</Text19>
+            <FlexRow9>
+              <Image6
+                src={"https://file.rendit.io/n/JQGZZAyYJm3CbdmKlHTt.svg"}
+              />
+              <NoCommets> No Comments</NoCommets>
+            </FlexRow9>
+          </FlexRow4>
+          <Line4
+            src={"https://file.rendit.io/n/I36gaeV7Ws80azfM59lu.svg"}
+          />
+          <FlexRow6>
+            <Image7
+              src={"https://file.rendit.io/n/X0zysaW1KEDmyRsxn9OC.svg"}
+            />
+            <Text21>Like</Text21>
+            <Line5
+              src={"https://file.rendit.io/n/Oc5dDjSImGweO2nALW9j.svg"}
+            />
+            <Image8
+              src={"https://file.rendit.io/n/0wEqBy5dAneQEKhExMbZ.svg"}
+            />
+            <Text22>Comment</Text22>
+          </FlexRow6>
+        </WhiteFlexColumn1>
+
+    
+  )
+}
+const PostRoot = styled.div`
   border-width: 1px;
   border-color: #000000;
   border-style: solid;
@@ -189,13 +68,11 @@ const JoinCommunityRoot = styled.div`
   display: flex;
   overflow: hidden;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   margin: auto;
   min-width: 1438px;
-  align-items: flex-start;
 `;
-const Element2 = styled.div`
-  align-self: stretch;
+const Element3 = styled.div`
   height: 71px;
   position: relative;
   min-width: 1438px;
@@ -260,9 +137,10 @@ const Text5 = styled.div`
   top: 17px;
   left: 561px;
 `;
-const Element3 = styled.div`
+const Element4 = styled.div`
   width: 1119px;
   height: 93.5px;
+  align-self: flex-start;
   position: relative;
   margin: 0px 0px 37.5px 144px;
 `;
@@ -283,7 +161,6 @@ const Line = styled.img`
   left: 0.5px;
 `;
 const FlexRow = styled.div`
-  align-self: stretch;
   display: flex;
   flex-direction: row;
   padding: 0px 175px 0px 149px;
@@ -299,14 +176,14 @@ const FlexColumn = styled.div`
   align-items: flex-start;
   margin: 0px 335px 0px 0px;
 `;
-const Element4 = styled.div`
+const Element5 = styled.div`
   align-self: stretch;
   height: 57px;
   position: relative;
   min-width: 459px;
 `;
 const Ellipse = styled.div`
-  background-image: url("https://file.rendit.io/n/tmd9cls81nXypNS7YfuS.png");
+  background-image: url("https://file.rendit.io/n/lCJGC7jQonuvrbTSHZKh.png");
   background-size: cover;
   position: absolute;
   left: 402px;
@@ -317,7 +194,7 @@ const Ellipse = styled.div`
 `;
 const Ellipse1 = styled.div`
   height: 57px;
-  background-image: url("https://file.rendit.io/n/9Uy9Gf1meJwDOssMtPv8.svg");
+  background-image: url("https://file.rendit.io/n/cK3FvkmIUhvcn3H1L6am.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -375,7 +252,7 @@ const Ellipse7 = styled.img`
   position: absolute;
   left: 206px;
 `;
-const Element5 = styled.div`
+const Element6 = styled.div`
   width: 202px;
   height: 108px;
   position: relative;
@@ -404,7 +281,7 @@ const Text8 = styled.div`
   top: 10px;
   left: 38px;
 `;
-const Element6 = styled.div`
+const Element7 = styled.div`
   width: 90px;
   height: 108px;
   position: relative;
@@ -435,10 +312,10 @@ const Text9 = styled.div`
 const Line1 = styled.img`
   width: 1116px;
   height: 1px;
+  align-self: flex-start;
   margin: 0px 0px 21px 144.5px;
 `;
 const FlexRow1 = styled.div`
-  align-self: stretch;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -450,12 +327,18 @@ const Line3 = styled.img`
   width: 172px;
   height: 5px;
   align-self: center;
-  margin: 0px 40px 0px 0px;
+  margin: 0px 0px 1px 0px;
 `;
 const Line2 = styled.img`
   width: 1116px;
   height: 1px;
+  align-self: flex-start;
   margin: 0px 0px 28px 140.5px;
+`;
+const Element8 = styled.div`
+  height: 1437px;
+  position: relative;
+  min-width: 1438px;
 `;
 const WhiteFlexRow1 = styled.div`
   border-width: 1px;
@@ -465,13 +348,14 @@ const WhiteFlexRow1 = styled.div`
   width: 1029px;
   background-color: #ffffff;
   display: flex;
+  position: absolute;
+  left: 115px;
   flex-direction: row;
   justify-content: flex-end;
   gap: 42px;
   align-items: flex-start;
   border-radius: 20px;
   padding: 59px 43px 25px 43px;
-  margin: 0px 0px 48px 115px;
 `;
 const FlexColumn1 = styled.div`
   align-self: stretch;
@@ -496,7 +380,7 @@ const WhiteFlexRow2 = styled.div`
 const Text13 = styled.div`
   width: 545px;
   height: 67px;
-
+  font-size: 30px;
   font-family: SF Pro Display;
   font-weight: 500;
 `;
@@ -555,6 +439,35 @@ const Akariconssend = styled.img`
   width: 47px;
   height: 47px;
 `;
+const FlexColumn2 = styled.div`
+  height: 1192px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  top: 245px;
+  left: 44px;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 19px;
+  align-items: flex-start;
+  padding: 0px 109px 0px 76px;
+`;
+const Element9 = styled.div`
+  align-self: stretch;
+  height: 1013px;
+  position: relative;
+  min-width: 1126px;
+`;
+const Text17 = styled.div`
+  width: 428px;
+  height: 46px;
+  font-size: 40px;
+  font-family: SF Pro Display;
+  font-weight: 600;
+  position: absolute;
+  top: 1061px;
+  left: 37px;
+`;
 const WhiteFlexColumn = styled.div`
   border-width: 1px;
   border-color: #f0f0f0;
@@ -563,11 +476,13 @@ const WhiteFlexColumn = styled.div`
   height: 985px;
   background-color: #ffffff;
   display: flex;
+  position: absolute;
+  top: 1126px;
+  left: 7px;
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
   padding: 12px 33.5px 12px 62px;
-  margin: 0px 0px 0px 115px;
 `;
 const FlexRow3 = styled.div`
   display: flex;
@@ -578,60 +493,11 @@ const FlexRow3 = styled.div`
   padding: 0px 7px;
   margin: 0px 0px 44px 0px;
 `;
-const FlexColumn2 = styled.div`
-  align-self: stretch;
-  width: 582px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 14px;
-  flex-grow: 1;
-  align-items: flex-start;
-  
-`;
-const Text17 = styled.div`
-  width: 567px;
-  height: 46px;
-  font-size: 40px;
-  font-family: SF Pro Display;
-  font-weight: 400;
-  align-self: flex-start;
-  margin-bottom: 25px;
-`;
 const Image5 = styled.img`
   width: 543px;
   height: 630px;
   align-self: center;
   margin: 0px 0px 16px 0px;
-`;
-const FlexRow4 = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 16px;
-  align-items: center;
-  margin: 0px 0px 22px 0px;
-`;
-const Ellipse10 = styled.div`
-  background-image: url("https://file.rendit.io/n/Dc4lFHhC5A6PQawg9Bm4.svg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px 7px 12px 8px;
-`;
-const Antdesignliketwotone = styled.img`
-  width: 46px;
-  height: 41px;
-`;
-const Text18 = styled.div`
-  width: 65px;
-  height: 46px;
-  font-size: 35px;
-  font-family: SF Pro Display;
-  font-weight: 300;
-  align-self: flex-end;
-  margin: 0px 0px 5px 0px;
 `;
 const FlexRow5 = styled.div`
   display: flex;
@@ -639,64 +505,58 @@ const FlexRow5 = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const Image6 = styled.img`
-  width: 53px;
-  height: 53px;
-`;
-const Text19 = styled.div`
+const Text20 = styled.div`
   width: 150px;
   height: 30px;
   font-size: 25px;
   font-family: SF Pro Display;
   font-weight: 400;
 `;
-const Line4 = styled.img`
-  width: 1011px;
-  height: 1px;
-  align-self: flex-end;
-  margin: 0px 0px 10px 0px;
+const WhiteFlexColumn1 = styled.div`
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-style: solid;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 986px;
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 20px;
+  padding: 11.5px 33.5px 11.5px 177px;
 `;
-const FlexRow6 = styled.div`
+const FlexRow7 = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
+  gap: 21px;
   align-items: flex-start;
-  padding: 0px 267.5px 0px 327px;
+  padding: 0px 10px;
+  margin: 0px 0px 35px 0px;
 `;
-const Image7 = styled.img`
-  width: 46px;
-  height: 41px;
-  margin: 10px 7px 0px 0px;
-`;
-const Text20 = styled.div`
-  width: 65px;
-  height: 46px;
-  font-size: 30px;
-  font-family: SF Pro Display;
-  font-weight: 500;
-  color: #b4acac;
-  align-self: flex-end;
-  margin: 0px 43.5px 7px 0px;
-`;
-const Line5 = styled.img`
-  width: 1px;
-  height: 66px;
+const Image9 = styled.img`
+  width: 379px;
+  height: 624px;
   align-self: center;
-  margin: 0px 50.5px 0px 0px;
+  margin: 0px 0px 34px 0px;
 `;
-const Image8 = styled.img`
-  width: 46px;
-  height: 43px;
-  margin: 11px 7px 0px 0px;
+const FlexRow9 = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
 `;
-const Text21 = styled.div`
-  width: 159px;
-  height: 46px;
-  font-size: 30px;
+const NoCommets = styled.div`
+  width: 150px;
+  height: 30px;
+  font-size: 25px;
   font-family: SF Pro Display;
-  font-weight: 500;
-  color: #b4acac;
+  font-weight: 400;
   align-self: flex-end;
-  margin: 0px 0px 7px 0px;
+  margin: 0px 0px 9px 0px;
+  white-space: pre-wrap;
 `;
 const Text2 = styled.div`
   height: 51px;
@@ -745,3 +605,105 @@ const Ellipse8 = styled.img`
   width: 101px;
   height: 101px;
 `;
+const FlexColumn3 = styled.div`
+  align-self: stretch;
+  width: 582px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  align-items: flex-start;
+  gap: ${(props) => props.gap};
+`;
+const Text18 = styled.div`
+  width: 567px;
+  height: 46px;
+  font-size: 40px;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  align-self: flex-start;
+`;
+const FlexRow4 = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  margin: 0px 0px 22.5px 0px;
+`;
+const Ellipse10 = styled.div`
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 7px 12px 8px;
+  background-image: ${(props) => props.backgroundImage};
+`;
+const Antdesignliketwotone = styled.img`
+  width: 46px;
+  height: 41px;
+`;
+const Text19 = styled.div`
+  width: 65px;
+  height: 46px;
+  font-size: 35px;
+  font-family: SF Pro Display;
+  font-weight: 300;
+  align-self: flex-end;
+  margin: 0px 0px 5px 0px;
+`;
+const Image6 = styled.img`
+  width: 53px;
+  height: 53px;
+`;
+const Line4 = styled.img`
+  width: 1011px;
+  height: 1px;
+  align-self: flex-end;
+  margin: 0px 0px 10px 0px;
+`;
+const FlexRow6 = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 267.5px 0px 327px;
+`;
+const Image7 = styled.img`
+  width: 46px;
+  height: 41px;
+  margin: 9.5px 7px 0px 0px;
+`;
+const Text21 = styled.div`
+  width: 65px;
+  height: 46px;
+  font-size: 30px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  color: #b4acac;
+  align-self: flex-end;
+  margin: 0px 43.5px 7.5px 0px;
+`;
+const Line5 = styled.img`
+  width: 1px;
+  height: 66px;
+  align-self: center;
+  margin: 0px 50.5px 0px 0px;
+`;
+const Image8 = styled.img`
+  width: 46px;
+  height: 43px;
+  margin: 10.5px 7px 0px 0px;
+`;
+const Text22 = styled.div`
+  width: 159px;
+  height: 46px;
+  font-size: 30px;
+  font-family: SF Pro Display;
+  font-weight: 500;
+  color: #b4acac;
+  align-self: flex-end;
+  margin: 0px 0px 7.5px 0px;
+`;
+
+
+export default NewPost
